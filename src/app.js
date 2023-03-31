@@ -22,13 +22,13 @@ function formatDate(timestamp) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
   let humidityElement = document.querySelector("#humidity");
   let windElement = document.querySelector("#wind");
   let dateElement = document.querySelector("#date");
+
   temperatureElement.innerHTML = Math.round(response.data.temperature.current);
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
@@ -39,6 +39,6 @@ function displayTemperature(response) {
 
 let apiKey = "b25040d2afb34b3045dd0tf3a23afo09";
 let apiUrl =
-  "https://api.shecodes.io/weather/v1/current?query=Toronto&key=b25040d2afb34b3045dd0tf3a23afo09&units=metric";
+  "https://api.shecodes.io/weather/v1/current?query=Paris&key=b25040d2afb34b3045dd0tf3a23afo09&units=metric";
 
 axios.get(apiUrl).then(displayTemperature);
