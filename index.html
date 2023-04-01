@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- The head starts here -->
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -14,11 +15,13 @@
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App by Candice</title>
   </head>
+  <!-- The head ends here -->
   <body>
     <!-- The Weather App starts here -->
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
+          <!-- The search form starts here -->
           <form id="search-form" class="mb-3">
             <div class="row">
               <div class="col-9">
@@ -39,14 +42,18 @@
               </div>
             </div>
           </form>
+          <!-- The search form ends here -->
           <div class="overview">
+            <!-- The overview starts here -->
             <h1 id="city"></h1>
             <ul>
               <li id="date">Friday 5:00</li>
               <li id="description"></li>
             </ul>
           </div>
+          <!-- The overview ends here -->
           <div class="row">
+            <!-- Row 1 with two sections starts here -->
             <div class="col-6">
               <div class="d-flex weather-temperature">
                 <img src="" alt="Clear" id="icon" />
@@ -66,6 +73,26 @@
               </ul>
             </div>
           </div>
+          <div class="weather-forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date">
+                  Thu
+                  <img
+                    src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-day.png"
+                    alt="Clear"
+                    id="icon"
+                    width="42"
+                  />
+                  <div class="weather-forecast-temperatures">
+                    <span class="weather-forecast-temperature-max">18°</span
+                    ><span class="weather-forecast-temperature-min">12°</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Row 1 with two sections ends here -->
         </div>
         <small>
           This project was coded by Candice Dan and is
@@ -77,6 +104,8 @@
         </small>
       </div>
     </div>
+
     <script src="src/app.js"></script>
   </body>
+  <!-- The Weather App ends here -->
 </html>
